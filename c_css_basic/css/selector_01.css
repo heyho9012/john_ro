@@ -1,0 +1,15 @@
+@charset "utf-8";
+h1{background:#777;color:#ff0;}
+h2{background:#00f;color:#fff;}
+.wrap{background-color:#ff0; color:#00f;}
+.con{border-style:outset; border-color:#f00; border-width:5px;}
+.box>ol>li>a{color:#ffa500;}
+.bg1{background-color:#ff0;}
+.bg2{background-color:#00f;}
+.bg3{background-color:#b00;}
+
+#list{border-width:3px; border-style:dotted; border-color:#faf;}
+.red>a{color:#f00;}
+.yellow>a{color:#ff0;}
+.blue>a{color:#00f;}
+.green>a{color:#0f0;}

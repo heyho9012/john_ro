@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+/*ul li a{background-color:#0ff;}
+li a{background-color:#fa0;}*/
+span{background-color:#ddd;}
+a:hover>span{background-color:orange;}
+a:focus>span{background-color:red;}
+a:active>span{background-color:cyan;}
+/*a:visited>span{color:#fff;}*/
+/*a:focus>span{outline: 5px solid #000;}*/
+
+p{margin:100px auto;width:500px;height:100px;text-align:center;line-height:100px;
+  border-width:3px;border-style:solid;border-color:#777}
+p:before{content:"어떻게 될까요?";color:#f00;font-weight:bold;}
+p:after{content:"어디에 될까요?";color:#00f;font-weight:bold;}
+
+
