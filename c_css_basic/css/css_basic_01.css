@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.size_check{width:800px;height:800px;margin:auto;background-color:#ccc;}
+.size_check>p{width:80%; min-width:400px; max-width:700px; height:200px;background-color:#0cc;}
+/* 1cm=10mm=px(x but 임위단위 o)
+   16px=12pt=100%+1em=1rem(단, 최초기본설정에서) */
+h3{margin:0;padding:1rem;background-color: #fff;}
+.size_check>ul{width:100%;height:300px;background-color: #fa0;margin:0;padding:0;}
+.size_check>ul>li{display: inline-block; width:50px;height:50px;border-width:5px;border-style:solid;border-color:#333;text-align:center; line-height:50px;list-style:none;}
+/*  display:형태를 변형처리할 때 사용 
+            block(크기를 가짐, 아래로 쌓인다) inline(옆으로 나열, 크기를 가질 수 없다)
+            inline-block(크기와 옆으로 나열, 알 수 없는 공백) 
+            none(강제로 사라지게 만드는 기능:존재도 없게 만드는 기능 */
+/*  float:옆으로 나열하게 만드는 기능, inline요소일 경우 float을 사용하면 강제로 block요소로 변경
+          left(부모의 크기를 기준으로 왼쪽부터 정렬) right(부모의 크가를 기준으로 오른쪽부터 정렬) 
+    visibility:display속성과 유사한 기능을 가지고 있다 하지만 기본 2가지 속성을 가진다
+               visible(display:block과 같은 보여지게 만드는 기능)
+               hidden(display:none과 같이 사라지는 기능::display와 다른점은 위치하던 자리는 그대로 남아진다)      */
+.size_check>ul>li:nth-child(3n){background-color:#f07;}
+.over{width:80%;min-width:500px;height:auto;background-color:#0df;padding:1rem;box-sizing:border-box;}
+.over>p{margin:auto;width:450px;height:200px;margin-bottom:400px;border-width:2px;
+        border-style:outset;border-color:#fa0;}
+.two{overflow:scroll;}
+.three{overflow:auto;}
+/* overflow:지정된 크기를 기준으로 내부의 영역이 넘친다면, 어떻게 처리할 것인가를 판단하는 내용 */
+.four{overflow:hidden;}
+.four>span{display:block; overflow:hidden; overflow-y:auto; text-overflow: ellipsis; width:100%;               height:100%; background-color: #fff; padding-right:20px;}
+.over>.five{height:30px;overflow:hidden;white-space:nowrap;
+      text-overflow: ellipsis;}
+/* white-space:의도하지 않은 공백 처리방법
+                pre(실제 코드에서 작성한 형태대로 공백) 
+                unset(기본, 크기에 맞게 줄바꿈처리)
+                pre-line(실제코드에서 줄바꿈과 동일하게 처리) nowrap(여백 모두 삭제)
+   text-overflow:overflow와 유사하지만 넘치는 영역이 글자일 경우에 처리방법
+                ellipsis(말줄임표) unset(기본형으로) */
+
