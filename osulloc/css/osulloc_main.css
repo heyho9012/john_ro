@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.clearfix::after, .clearfix:after{content:""; display: block; clear:both; width: 0;height: 0; }
+.hidden{display:block; overflow:hidden; position:absolute; width:0; height:0; }
+
+
+.w_100{width: 100%;}
+#wrap{height:5872px;}
+
+/* ============================================================= */
+#headBox{height:168px; background-color: #1d1d1d;}
+  .head_area{position:relative; left: 0; right: 0; width: 1333px; height: auto; margin: auto;}
+    .head_area>h1{float:left; width: 194px; height: 168px;}
+    .head_area p{width: 170px; height: 78px; margin-top: 45px; margin-left: 12px; background-color: #fff;}
+    .head_area>.unb{float:right; width: 330px; height: 168px; background-color: #fff;}
+    .banner_area{width: 103px; height: 168px;}
+    .banner_area>.language{width: 103px; height: 34px;  background-color: #fff;}
+/* ============================================================= */
+#conBox{height: auto; background-color: #666;}
+  .view_area{height: 906px; background-color: #1d1d1d;}
+  .shop_area{height: 1682px;}
+  .meseum_area{height: 907px; }
+  .about_area{height: 907px;}
+  .sns_area{height: 581px;}
+/* ============================================================= */
+#footBox{height: auto; background-color: #ccc;}
+  .foot_area{width: 1616px; height: 721px;}
