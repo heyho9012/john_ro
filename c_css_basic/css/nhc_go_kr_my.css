@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.hidden{display:block; overflow:hidden; position:absolute; width:0; height:0; }
+.clearfix::after, .clearfix:after{content:""; display: block; clear:both; width: 0;height: 0; }
+
+
+#wrap{width: 1900px ;height: 3600px; margin:auto;}
+.con_wrap, #conBox>div{width: 100%;}
+
+#headBox{height: 120px;}
+  .unb_area{float:left; height:auto; background-color: #aaa;}
+    .unb{float:right; width: 360px; height: 40px; background-color: #fa0;}
+  .banner_area{position: relative; height:auto; background-color: #777;}
+     h1{float:left; width: 280px; height: 80px; background-color: #0ff;}
+    .gnb{position:absolute; left: 0; right: 0; top:40px; margin:auto; width: 950px; height: 80px;background-color: #ff0;}
+    .site_map{float:right; width: 240px; height: 80px;background-color: #f0f;}
+#conBox{height:3310px;}
+  .con_area{padding-top: 45px;}
+  .con_area>h3{width:100%; height:50px; text-align:center; font-size:45px; line-height:50px; color:#fff;}
+  .con_area>p{width:100%; height:20px; text-align:center; font-size:15px; line-height:20px; color:#fff;} .news_area>h3{color:#000;}
+  .view_area{position:relative; height: 855px; background-color: #333;}
+    .view_area>h3{position: absolute; top:320px; left: 0; right: 0; font-size:30px; font-weight:bolder;}
+    .view_area>h3>span{font-size:50px; font-weight:lighter;}
+    .left_point{position: absolute; top:320px; left:7%; width: 140px; height: 100px; background-color: #000;}
+    .right_point{position: absolute; top:320px; right:7%; width: 140px; height: 100px; background-color: #000;}
+    .bottom_button{position: absolute; bottom: 65px; left: 0;right: 0; margin:auto; width: 865px; height: 70px; background-color: #000;}
+
+  .news_area{position:relative; height: 895px; background-color: #666;}
+    .news_area>.content{position:absolute; top: 135px; left: 0; right: 0; margin:auto; width: 1198px;height: 650px;background-color: #f57;}
+  .media_area{position:relative; height: 851px; background-color: #aaa;}
+    .media_area>.media{position:absolute; left: 0;right: 0; top: 180px; margin:auto; width: 950px; height: 530px; background-color: #f57;}
+  .counter_area{position: relative; height: 709px; background-color: #777;}
+    .counter_area>.counter{position:absolute; left: 0;right: 0; top: 250px; margin:auto; width: 1107px;height: 390px; background-color: #f57;}
+    
+#footBox{height: 170px; background-color: #555;}
+  #footBox>.content{width: 1198px; height: 88px; background-color: #000;}

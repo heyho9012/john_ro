@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#wrap{width: 960px;height: 1200px;margin: 0 auto;padding: 0;}
+#headBox{widows:960px;height: 120px;background-color: #f0f;}
+#h1{width: 150px;height: 100px;margin:10px; background-color: #fff; float:left;}
+#unb{width: 220px;height: 40px;margin:10px; background-color: #fff;}
+#gnb{width: 500px;height: 50px;margin-bottom:10px; margin-right: 10px;                    background-color: #fff;}
+#nb_wrap, #unb, #gnb{float:right;} #nb_wrap{width: 500px;height: 100px;}
+
+#viewBox{width: 960px;height: 450px;background-color: #fa0;}
+
+#contentBox{height: 500px;width: 960px;} 
+#contentBox ul{list-style:none; background-color: #00a; 
+               width: 200px;height: 500px;margin: 0;padding: 0;float:left;}
+#contentBox li{width: 200px;height: 100px;margin-bottom:20px;padding: 0;                                                  background-color: #a0a; float:left;}
+#contentBox li:first-child{margin-top: 20px;}
+.lnb_list{width: 760px;height:200px; background-color: #0f0;float: right;}
+#lnb_content{width: 760px;height: 300px;margin: 0;padding: 0;float: right;}
+.content_01{background-color: #a50;width: 380px;height: 300px;margin: 0;padding: 0;float: right;}
+.content_02{background-color: #f55;width: 380px;height: 300px;margin: 0;padding: 0;float: right;}
+
+#footBox{height: 130px;width:100%;background-color: #666;}
