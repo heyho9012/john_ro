@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#contentBox{width:800px;margin:auto;height:auto;border:2px solid #333;box-sizing:border-box;}
+  #contentBox>div{width:100%;height:500px;background-repeat:no-repeat;background-position:50% 50%;overflow:hidden;overflow-y:auto;}
+  .box_01{background-image:url(../image/arturo-rey-YWUhBD38LSM-unsplash.jpg);background-attachment:local;}
+  .box_02{background-image:url(../image/ava-sol-H1jeAfXb2zQ-unsplash.jpg);background-attachment:fixed;}
+  .box_03{background-image:url(../image/evgeni-tcherkasski-6o8pjwSEg04-unsplash.jpg);background-attachment:scroll;}
+    #contentBox>div>h3{width:100%;height:70px;background-color:rgba(255,100,0,0.3)}
+    #contentBox>div>ul{width:100%;padding-left:1rem;box-sizing:border-box;}
+      #contentBox>div>ul>li{list-style:decimal;height:50px;background-color:rgba(255,255,255,0.3)}
+/*
+  background-attachment:배경이미지 고정처리 유무판단::local(기본형)||fixed(고정)||scroll(요소내부에 스크롤 시 고정)
+    주의사항:fixed처리시 background-position의 위치값이 브라우저기준으로 처리됨(부모기준X:위치잡기가 까다로움::대신에 javascript로 사용)
+*/
+
+#gradientBox{width:800px;height:auto;margin:auto;margin-top:2rem;border:3px solid #333;}
+  #gradientBox>div{width:100%;height:500px;margin-bottom:1rem;}
+  #gradientBox>div:last-of-type{margin-bottom:0;}
+  .gr_01{background-image:linear-gradient(#fa0,#0af);}
+  .gr_02{background-image:linear-gradient(45deg, #f90, #faf);}
+  .gr_03{background-image:linear-gradient(30deg, #0af 30%, #fac 40%);}
+  .gr_04{background-image:linear-gradient(-45deg, #fac 30%, #86f 30% 80%, #171717 80%);}
+  .gr_04:hover{background-image:linear-gradient(-45deg, #aaa 30%, #695 30% 80%, #171717 80%);}
+  .gr_05{position:relative;z-index:0;background-image:linear-gradient(-45deg, #fac, #acf);}
+    .gr_05:after{content:"";display:block;position:absolute;z-index:-1;top:0;left:0;width:100%;height:100%;opacity:0;background-image:linear-gradient(-45deg, #0ac, #a0f);
+                 transition:all 300ms ease;}
+    .gr_05:hover:after{opacity:1;}
+  .gr_06{background-image:radial-gradient(circle,#fa0 50%,#a0f 70%);}
+  .gr_07{background-image:radial-gradient(ellipse,#fa0 50%,#a0f 70%);}
+  .gr_08{background-image:radial-gradient(ellipse at 10% 10%,#fa0 50%,#a0f 70%);}
+/* 
+  background-image:url()||linear-gradient()||radial-gradient()
+    url():이미지삽입
+    linear-gradient():직선형의 그라데이션 효과(각도(deg),색 위치,색 위치, ...)
+    radial-gradient(): 원형의 그라데이션 효과(모양(circle|ellipse) 및 위치(at x y),색 위치, 색 위치, ...)
+      url()을 제외한 gradient는 벤더프리픽스를 사용해야 함
+        backgrouind-image:-webkit-radial-gradient();
+        backgrouind-image:-moz-radial-gradient();
+        backgrouind-image:-ms-radial-gradient();
+        backgrouind-image:-o-radial-gradient();
+        backgrouind-image:radial-gradient();
+
+*/

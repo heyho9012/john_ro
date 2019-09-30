@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+#contentBox{width:800px;height:auto;margin:auto;}
+  #contentBox>div{width:100%;height:500px;margin-bottom:2rem;background-color:#ccc;background-position:50% 50%; 
+                  background-repeat:no-repeat;background-image:url(../image/9972D7405D219FB718.png); background-size:cover;
+                  border:10px dashed #fa0;box-sizing:border-box;background-color:#acf;padding:40px;}
+    .clip_1{background-clip:border-box;}
+    .clip_2{background-clip:padding-box;}
+    .clip_3{background-clip:content-box;}
+    .origin_1{background-origin:border-box;}  
+    .origin_2{background-origin:padding-box;}  
+    .origin_3{background-origin:content-box;}  

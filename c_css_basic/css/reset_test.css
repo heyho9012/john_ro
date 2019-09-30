@@ -13,9 +13,8 @@ hr{margin:0; padding:0;border-bottom:1px solid #333;}
 button{background-color:transparent;border:1px solid #f06; cursor:pointer;}
 button:hover{background-color: #fa0;}
 button:focus{background-color: #f06;}
-
 /* html5 */
-main, header, footer, aside, nav, article, section, figure, figcaption{display:block;}
+main, header, footer, aside, nav, article, section, figure, figcaption{display:block; margin:0; padding: 0;}
 /* form */
 form, fieldset, legend{margin:0;padding:0;border:0;}
 legend{width:0;height:0;overflow:hidden;position:absolute;}
