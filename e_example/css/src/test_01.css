@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+#wrap{width: 100%; height: auto;}
+#headBox>ul{float:left; width: 100%; height: 100%;} #footBox>ul{float:left; width: 100%; height: 100%;}
+#conBox>article{float:left; border: 1px solid #000; box-sizing: border-box;}
+
+/* ====================================================== max 960px ========================================================= */
+@media screen and (min-width:769px){
+
+#wrap{width: 100%; max-width: 60rem; height: auto; }
+
+#headBox{width: 100%; height: 9.375rem;}
+#headBox>ul>li:first-child{float:left; width: 6.25rem; height: 100%; background-color: #fa0;}
+#headBox>ul>li:nth-child(2){float:left; width: calc(100% - 6.25rem); height: 100%; background-color: #f0a;}
+
+#conBox{width: 100%; height: 65.625rem;}
+  .con_01{width: 100%; height: 28.125rem; background-color: #7a7;}
+  .con_02{width: 25%; height: 37.5rem; background-color: #0aa;}
+  .con_03{width: 25%; height: 37.5rem; background-color: #aa0;}
+  .con_04{width: 25%; height: 37.5rem; background-color: #0aa;}
+  .con_05{width: 25%; height: 37.5rem; background-color: #aa0;}
+
+#footBox{width: 100%; height: 6.25rem;}
+  #footBox>ul>li:first-child{float:left; width: 6.25rem; height: 100%; background-color: #5a5;}
+  #footBox>ul>li:last-child{float:left; width: calc(100% - 6.25rem); height: 100%; background-color: #05a;}
+}
+
+/* ====================================================== max 768px ========================================================= */
+@media screen and (min-width:481px) and (max-width:768px){
+  
+  #wrap{width: 100%; height: auto;}
+
+  #headBox{width: 100%; height: 9.375rem;}
+  #headBox>ul>li:first-child{float:left; width: 6.25rem; height: 100%; background-color: #fa0;}
+  #headBox>ul>li:nth-child(2){float:left; width: calc(100% - 6.25rem); height: 100%; background-color: #f0a;}
+  
+  #conBox{width: 100%; height: 62.5rem;}
+    .con_01{width: 100%; height: 18.75rem; background-color: #7a7;}
+    .con_02{width: 25%; height: 25rem; background-color: #0aa;}
+    .con_03{width: 25%; height: 25rem; background-color: #aa0;}
+    .con_04{width: 25%; height: 25rem; background-color: #0aa;}
+    .con_05{width: 25%; height: 25rem; background-color: #aa0;}
+    .con_06{width: 100%; height: 6.25rem; background-color: #fa0;}
+    .con_07{width: 100%; height: 12.5rem; background-color: #a85;}
+  
+  #footBox{width: 100%; height: 6.25rem;}
+    #footBox>ul>li:first-child{float:left; width: 6.25rem; height: 100%; background-color: #5a5;}
+    #footBox>ul>li:last-child{float:left; width: calc(100% - 6.25rem); height: 100%; background-color: #05a;}
+  }
+
+/* ====================================================== max 480px ========================================================= */
+@media screen and (max-width:480px){
+  
+  #wrap{width: 100%; height: auto;}
+
+  #headBox{position:relative; width: 100%; height:6.25rem;}
+  #headBox>ul{background-color: #fa0;}
+  #headBox>ul>li:last-child{position:absolute; top: 0; bottom: 0; right:1.40625rem; margin:auto; width: 2.8125rem; height: 2.8125rem;  background-color: #fff;}
+  
+  #conBox{width: 100%; height: 68.75rem;}
+    .con_01{width: 100%; height: 25rem; background-color: #7a7;}
+    .con_02{width: 50%; height: 12.5rem; background-color: #0aa;}
+    .con_03{width: 50%; height: 12.5rem; background-color: #aa0;}
+    .con_04{width: 50%; height: 12.5rem; background-color: #0aa;}
+    .con_05{width: 50%; height: 12.5rem; background-color: #aa0;}
+    .con_06{width: 100%; height: 6.25rem; background-color: #fa0;}
+    .con_07{width: 100%; height: 12.5rem; background-color: #a85;}
+  
+  #footBox{width: 100%; height: 6.25rem; background-color: #05a;}
+    #footBox>ul>li:first-child{margin:auto; width: 50%; height: 100%; background-color: #5a5;}
+
+  }
