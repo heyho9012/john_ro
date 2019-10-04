@@ -1,0 +1,7 @@
+/* - design 기준: 480px ==================================================== */
+@media screen and (max-width:479px){
+  info_02{display:none;}
+  info_03{display:none;}
+}
+/* - design 기준: 480px ==================================================== */
+@media screen and (min-width:480px) and (max-width:767px){}

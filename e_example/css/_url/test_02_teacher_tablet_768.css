@@ -1,0 +1,11 @@
+
+/* - 디자인 기준 : 768px ==================================================== */
+@media screen and (min-width:768px) and (max-width:959px){
+  h1{width:174px;}
+  .view_area{height:420px;}
+  .tip_area{height:210px;}
+  .info_area{height:540px;}
+  .info_area:after,info_area::after{content:"";display:block;width:0;height:0;clear:both;}
+    .info_area>div{width:50%;float:left;height:540px;}
+#footBox{height:120px;}
+}

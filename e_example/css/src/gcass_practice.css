@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+#wrap{width:980px;height:850px;}
+
+#subBox{width:980px;height:30px; background-color: #888;}
+  #subBox>ul{float:right;width:435px;height:100%;}
+  #subBox>ul>li{float:left;width:95px;height:100%;text-align:center;} #subBox>ul>li:last-child{width:245px;height:100%;text-align-last:left;}
+  #subBox a{display:block; width:100%;height:100%;color:#fff;} #subBox li:last-child>a{color:#555;padding-left:17px;box-sizing:border-box;}
+  #subBox>ul>li:nth-child(1){background-color:transparent;}
+  #subBox>ul>li:nth-child(2){background-color: #555;}
+  #subBox>ul>li:nth-child(3){background-color: #fff30d;}
+
+#headBox{float:left;width:249px;height:710px;background-color: #777; padding:49px 52px 103px 40px; box-sizing:border-box;}
+  #headBox>h1{width: 153px;height:103px; background-image: url(../../img/gcass_logo\ -\ Assistor.png); background-repeat: no-repeat;}
+  #headBox>ul{width: 158px;height: 301px;margin-top: 35px;}
+    #headBox li{width: 158px;height: 41px;margin-bottom: 24px;background-repeat: no-repeat;}
+    #headBox li:nth-child(1){background-image: url(../../img/about.png);}
+    #headBox li:nth-child(2){background-image: url(../../img/study.png);}
+    #headBox li:nth-child(3){background-image: url(../../img/photo.png);}
+    #headBox li:nth-child(4){background-image: url(../../img/blog\ -\ Assistor.png);}
+    #headBox li:nth-child(5){margin-bottom:0;background-image: url(../../img/press\ -\ Assistor.png);}
+      #headBox a{display:block; width: 100%;height: 100%;}
+  #headBox>div{width: 158px;height: 113px;background-image: url(../../img/qna\ -\ Assistor.png);background-repeat: no-repeat;margin-left:23px;margin-top: 10px;}
+
+#viewBox{float:left;width:731px;height:710px;background-color: #adadad;}
+  #viewBox>div{width: 100%;height: 100%;background-image: url(../../img/com_img\ -\ Assistor.png);background-repeat: no-repeat; background-size:cover;}
+
+#footBox{position:relative;width:980px;height:110px;padding-left:40px;padding-top:15px;box-sizing:border-box;background-color: #fff;clear:both;}
+  #footBox>h1{width: 74px;height:52px;background-image:url(../../img/foot_loge.png); background-repeat: no-repeat;}
+  .locate_icon{width: 32px;height: 36px;background-image: url(../../img/locate_icon.png); background-repeat: no-repeat;}
+  .fb_icon{width: 32px;height: 36px;background-image: url(../../img/fb_icon.png); background-repeat: no-repeat;}
+  #footBox>.web_box{position:absolute;top:-65px;right: 42px;width: 300px;height: 130px;}
+  #footBox>.web_box>ul{width: 100%;height: 100%;}
+    #footBox>.web_box>ul>li{float:left;background-color: #555;text-align: center;padding-top:25px;box-sizing:border-box;}
+    #footBox>.web_box>ul>li:nth-child(1), #footBox>div>ul>li:nth-child(2){border-bottom:1px solid #adadad; }
+    #footBox>.web_box>ul>li:nth-child(2n-1){width: 98px;height: 65px;color:#fff;}
+    #footBox>.web_box>ul>li:nth-child(2n){width: 202px;height: 65px;background-color: #fff30d;color:#555;}
+    
+    
