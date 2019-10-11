@@ -1,0 +1,21 @@
+.ani_one{width:100%;min-width:1200px;height:200px;padding:0.5rem;background-color:#fdc;border:2px solid #333;}
+.ani_one>.test{width:200px;height:200px;border-radius:100%;background-color:#5cf;text-align:center;line-height:200px;
+               animation:ball 3s ease-in-outs infinite alternate-reverse;}
+.test:hover{animation-play-state:paused;}
+@keyframes ball{
+  0%{transform:translateX(1700px) rotate(720deg);background-color: #f05;}
+  50%{transform:translate(50vw -100px);color:#fff;font-weight:bold;}
+  100%{transform:translateX(0px) rotate(-720deg);}
+}
+
+/**animation 
+  *animation-name:애니메이션 기능을 수행할 이름을 만드는 곳
+  *animation-duration:한번의 흐름에 대한 수행 시간
+  *animation-function:한번의 수행에 따른 흐름의 느낌
+  *animation-iteration-count:반복수행
+  *animation-direction:애니메이션 수행 후(한번의 수행) 방향을 어떻게?
+  *animation-delay:애니메이션 지연시간
+  *animation-play-state:움직이거나 멈추게하는 기능
+*/
+
+.myani{width:20px;height:20px;border-radius:100%;background-color: #333;animation:ball 2s infinite alternate-reverse;}

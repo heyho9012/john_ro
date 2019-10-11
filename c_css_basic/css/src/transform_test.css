@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+ul{width:100%;height:auto;margin-left:300px;margin-top:50px;}
+li{float:left;width:50px;height:50px;margin-right:20px;background-color:#555;color:#fff;text-align:center;line-height:50px;border-radius:15px;
+    transition:all 0.5s linear;}
+li:nth-child(1):hover{transform:rotate(45deg);}
+li:nth-child(2):hover{transform:translateY(-40px);}
+li:nth-child(3):hover{transform:scale(0.5)}
+li:nth-child(4):hover{transform:scale(1.5)}
+li:nth-child(5):hover{box-shadow:0.3rem 0.3rem 0.3rem #555;}
+li:nth-child(6):hover{background-color:#33a;}
+li:nth-child(7):hover{transform:perspective(500px) rotateX(45deg);}
+li:nth-child(8):hover{transform:perspective(500px) rotateY(45deg);}
+li:nth-child(9):hover{transform:rotate(359deg);}
+li:nth-child(10):hover{background-color: #aaa;}
+li:nth-child(11):hover{background-color: #555;}
+li:nth-child(11){background-color: #aaa;transition:all 1s linear;}
+li:nth-child(12):hover{width:200px; background-color: #33a;}
+li:nth-child(13):hover{animation:ani_01 3s; animation-iteration-count:infinite;}
+li:nth-child(14):hover{animation:ani_02 3s; animation-iteration-count:infinite;}
+li:nth-child(15):hover{animation:ani_03 3s; animation-iteration-count:infinite;}
+
+@keyframes ani_01{
+  0%{transform:rotate(0deg);}
+  50%{transform:rotate(-179deg)}
+  100%{transform:rotate(0deg);}
+}
+@keyframes ani_02{
+  50%{background-color: #ff0;}
+  100%{background-color: #00f;}
+}
+@keyframes ani_03{
+  50%{background-color: #ff0;transform:rotate(269deg);}
+}
