@@ -58,7 +58,7 @@ console.log(rel); */
 }else{
   console.log('잔액은',card);
 } */
-// (card<0) ? console.log('잔액부족') : console.log(card);
+// (card<0) ? console.log('잔액부족') : () ? console.log(card): console.log(card);
 /* 
   * 사칙연산(+,-,*,/,%)
   * +=, -=, *=, /=
