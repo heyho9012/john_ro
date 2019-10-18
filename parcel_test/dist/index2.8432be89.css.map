@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/css/import_01.css","src/css/import_02.css"],"names":[],"mappings":"AAAA;AACA;ACDA;AACA;AACA","file":"index2.8432be89.css","sourceRoot":"..","sourcesContent":["/* import_01.css */\r\nh2{background-color:#06f;color:#fff;}","/* import_02.css */\r\np{width:100%;height:300px;background-color:#faa;}\r\n.btn{padding:1rem;background-color:#777;color:#fff;}"]}

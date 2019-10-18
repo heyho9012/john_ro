@@ -21,3 +21,10 @@ $myp:('food.jpg','nat.jpg','cup.jpg');
 @for $i from 1 to length($myp)+1 {
   .myp_#{$i}{background-image: url($url + nth($myp,$i));}  
 }
+
+@mixin mobile {
+  @media screen and (min-width:33px) {
+    h1{width: 100px;}
+  }  
+}
+@include mobile();

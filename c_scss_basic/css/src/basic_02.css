@@ -1,0 +1,28 @@
+/* basic_02.css */
+.icon_01 {
+  background-image: url("$base+icon/login1.jpg"); }
+
+.icon_02 {
+  background-image: url("$base+model/model1.jpg"); }
+
+.icon_03 {
+  background-image: url("$base+nature/nature1.jpg"); }
+
+/*
+%box{display:block;width:100%;height:100%;}
+ul{@extend %box;}
+li{@extend %box;}
+.box:after{content:"";@extend%box;}
+.box::after{content:"";@extend%box;}
+*/
+.my_01 {
+  background-image: url("../../img/main/i.jpg");
+  background-repeat: repeat-x; }
+
+#headBox {
+  background-image: url("../../img/main/i.jpg");
+  background-repeat: no-repeat; }
+
+.testUnit {
+  width: 960px;
+  width: 60rem; }
