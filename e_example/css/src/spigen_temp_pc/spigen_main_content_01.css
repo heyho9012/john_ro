@@ -20,10 +20,15 @@
         /* .content_area>dl>dd.action{display:block;} */
         .content_area>dl>dd:first-of-type{display:block;}
         
-        .album{float:left;width:32%;height:100%;margin-right:2%;background-color: #000;padding:0.5rem;box-sizing:border-box;background-size:cover;background-position: 0 0;background-repeat: no-repeat;}
+        .album{position:relative;float:left;width:32%;height:100%;margin-right:2%;padding:0.5rem;box-sizing:border-box;background-size:cover;background-position: 0 0;background-repeat: no-repeat;}
+        .album:after,.album::after{content:"";display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5);transition:all 0.5s ease;}
+        .album:hover:after,.album:hover::after{background-color:transparent;}
         .album>a{display:block;width:100%;height:100%;color:#fff;}
-        .album h4{font-size:1.5rem;font-weight:bold;margin-bottom:9rem;text-transform:uppercase;}
+        .album h4{position:relative;z-index:10;font-size:1.25rem;font-weight:bold;margin-bottom:9rem;text-transform:uppercase;}
         .album:last-child{margin-right:0;}
+
+        .con{position:relative;z-index:10;font-size:1.125rem;font-weight:bold;color:#fff;}
+        .date{position:relative;z-index:10;font-size:1rem;color:#aaa;font-weight:bold;margin-top:10px;}
 
 
   .about_company{width:100%;height:50%;background-color:#333;}

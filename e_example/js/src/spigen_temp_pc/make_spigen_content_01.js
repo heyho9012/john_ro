@@ -2,6 +2,7 @@
   const conArea=$('.content_area'),
         conDl=conArea.find('dl'),
         conDt=conDl.find('dt'),
+        conDd=conDl.find('dd'),
         conDtBtn=conDt.children('button');
 
   conDtBtn.on('click focus',function(e){
@@ -47,8 +48,8 @@
                     ];
 // mediaList[0].text
 
-    const media=conArea.find('.media');
-    const blog=conArea.find('.blog');
+    const media=conArea.find('.media'),
+          blog=conArea.find('.blog');
     
 
     for(let i=0;i<mediaList.length;i++){
@@ -57,8 +58,7 @@
       myNth.find('h4').text('media');
       myNth.find('.con').text(mediaList[i].text);
       myNth.find('.date').text(mediaList[i].date);
-
-    }
+    };
 
     for(let i=0;i<blogList.length;i++){
       blog.append(bmText);
@@ -66,8 +66,7 @@
       myNth.find('h4').text('blog');
       myNth.find('.con').text(blogList[i].text);
       myNth.find('.date').text(blogList[i].date);
-
-    }
+    };
 
     const album=$('.album');
     for(let i=0;i<3;i++){
@@ -77,14 +76,13 @@
       myNthMedia.css({backgroundImage:"url(../img/spigen/media_"+j+".jpg)"});
       let myNthBlog=blog.children('.album').eq(i);
       myNthBlog.css({backgroundImage:"url(../img/spigen/blog_"+j+".jpg)"});
-    }
+    };
 
     conDtBtn.on('keyup',function(e){
       e.preventDefault();
-      console.log(e.keyCode);
+      let myThis=$(this).parent('dt');
       // 왼37위38 오39아래40
 
-      let myThis=$('this').parent('dt');
       switch(e.keyCode){
         case 37:
         case 38:
@@ -96,5 +94,7 @@
         break;
       }
     });
+
+
 
 })(jQuery);
