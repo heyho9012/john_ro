@@ -1,0 +1,29 @@
+/* spigen_main_content_01.css */
+/* #conBox  ========================================================================================================*/
+  #conBox{width:100%;height:100%;background-color:#ddd;padding-top:100px;box-sizing:border-box;}
+  .media_blog{width:100%;height:50%;background-color:inherit;}
+
+    .title_area{float:left;width:550px;height:100%;padding:90px 55px 0 160px;box-sizing:border-box;background-color: #fff;}
+      .title_area h3{margin-bottom:3.125rem;font-size:2.5rem;color:#555;text-transform:capitalize;font-weight:bold;}
+      .title_area p{font-size:1.125rem;color:#171717;word-break:keep-all;}
+
+    .content_area{float:left;width:calc(100% - 550px);height:100%;background-color:#f1f1f1;padding:50px 50px 0;box-sizing:border-box;}
+      .content_area>dl{position:relative;width:100%;height:100%;background-color:transparent;}
+
+        .content_area>dl>dt{float:left;width:160px;height:50px;}
+        .content_area>dl>dt:first-child{margin-right:10px;}
+          .content_area>dl>dt>button{width:100%;height:100%;background-color:transparent;color:#aaa;border:2px solid #aaa;
+                box-sizing:border-box;font-size:18px;text-transform:capitalize;transition:all 0.3s ease;}
+          .content_area>dl>dt>button.action{border:#f70;background-color:#f70;color:#fff;}
+
+        .content_area>dl>dd{display:none;position:absolute;left:0;bottom:0;width:100%;height:calc(100% - 50px);min-height:200px;padding:30px 0;box-sizing:border-box;background-color:transparent;}
+        /* .content_area>dl>dd.action{display:block;} */
+        .content_area>dl>dd:first-of-type{display:block;}
+        
+        .album{float:left;width:32%;height:100%;margin-right:2%;background-color: #000;padding:0.5rem;box-sizing:border-box;background-size:cover;background-position: 0 0;background-repeat: no-repeat;}
+        .album>a{display:block;width:100%;height:100%;color:#fff;}
+        .album h4{font-size:1.5rem;font-weight:bold;margin-bottom:9rem;text-transform:uppercase;}
+        .album:last-child{margin-right:0;}
+
+
+  .about_company{width:100%;height:50%;background-color:#333;}
