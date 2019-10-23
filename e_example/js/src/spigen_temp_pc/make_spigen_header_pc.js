@@ -21,7 +21,7 @@
     let myNth=gnb.find('ul').children('li').eq(i);
     myNth.find('dt').children('a').text(wnList[i].title);
     let myNth2=myNth.find('dd');
-    for(let j=0;j<3;j++){
+    for(let j=0;j<wnList[i].sub.length;j++){
       myNth2.append(wnLinkText);
       myNth2.children('a').eq(j).text(wnList[i].sub[j]);
     }
