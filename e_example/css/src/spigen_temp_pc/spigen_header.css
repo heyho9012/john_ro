@@ -4,7 +4,7 @@
 /* #headBox ========================================================================================================*/
 #headBox{position:fixed;top:0;left:0;z-index:1000;width:100%;height:100px;box-sizing:border-box;background-color:#fff;padding:27px 60px;}
 #headBox:after,#headBox::after{content:"";display:block;position:absolute;z-index:10;bottom:0;left:0;width:100%;height:0;border-bottom:1px solid #aaa;}
-  h1{position:relative;float:left;width:200px;height:44px;background-color:#ccc;}
+#headBox  h1{position:relative;float:left;width:200px;height:44px;background-color:#ccc;}
 @media screen and (max-width:1366px){#gnb{display:none;}}
 
   #gnb{position:absolute;top:0;left:0;right:0;margin:auto;width:760px;height:100px;background-color:#adf;}
