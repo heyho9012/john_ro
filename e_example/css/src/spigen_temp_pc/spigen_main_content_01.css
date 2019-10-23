@@ -29,13 +29,4 @@
         .con{position:relative;z-index:10;font-size:1.125rem;font-weight:bold;color:#fff;}
         .date{position:relative;z-index:10;font-size:1rem;color:#aaa;font-weight:bold;margin-top:10px;}
 
-        .inverstor_area{width:100%;height:100%;padding-top:80px;box-sizing:border-box;text-align:center;background-image:url(../../../img/spigen/inv_bg.jpg);background-repeat:no-repeat; background-size:cover;}
-        .inverstor_area h1{color:#fff;font-size:2.5rem;text-transform:uppercase;line-height:80px;font-weight:bold;}
-        .inverstor_area>p{color:#fff;font-size:1.125rem;margin-bottom:100px;}
-        .inverstor_area ul{position:relative;left:0;right:0;margin:auto;width:calc(100% - 300px);height:450px;}
-        .inverstor_area li{float:left;width:32%;height:100%;margin-right:2%;}
-        .inverstor_area li:last-child{margin-right:0;}
-        .inverstor_area a{position:relative;display:block;width:100%;height:100%;}
-        .inverstor_area a>p{position:absolute;z-index:100;bottom:0;width:100%;height:80px;text-align:center;background-color:rgba(0,0,0,0.5);color:#fff;font-weight:bold;font-size:20px;line-height:80px;text-transform:uppercase;}
-
   .about_company{width:100%;height:50%;background-color:#333;}

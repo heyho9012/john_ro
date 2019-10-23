@@ -5,6 +5,7 @@
         header=$('#headBox'),
         adver=$('#viewBox'),
         content=$('#conBox'),
+        content2=$('#conBox2'),
         footer=$('#footBox');
 // =======================================        
   let tempUrl="./spigen_temp/";
@@ -22,6 +23,11 @@
     body.append(`<script src="${conJS}"></script>`);
     // body.append(`<script src="${conJS}"></script>`);
     // body.append(`<script src="${conJS}"></script>`);
+  });
+
+  content2.load(tempUrl+'spigen_main_content_02.html',function(){
+    let conJS=jsUrl+'make_spigen_content_02.js';
+    body.append(`<script src="${conJS}"></script>`);
   });
 
   footer.load(tempUrl+'spigen_footer.html');

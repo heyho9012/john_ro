@@ -118,25 +118,4 @@
       } */
     });
 
-
-
-    const inv=$('.inverstor_area'),
-          invUl=inv.find('ul'),
-          invLi=invUl.find('li'),
-          invAncor=invLi.find('a'),
-          invInner=invAncor.find('.inner');
-    
-    for(let i=0;i<3;i++){
-      let j=i+1;
-      if(i<10){j='0'+(i+1);}
-      let myNthInv=invUl.children('li').eq(i);
-      myNthInv.css({backgroundImage:"url(../img/spigen/inv_"+j+".jpg)"});
-    };
-    
-    invLi.on('mouseenter',function(){$(this).children('a').children('p').stop().hide();})
-         .on('mouseleave',function(){$(this).children('a').children('p').stop().show();});
-    
-    
-
-
 })(jQuery);

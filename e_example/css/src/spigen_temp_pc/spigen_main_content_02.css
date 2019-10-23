@@ -1,0 +1,22 @@
+/* spigen_main_content_02.css */
+
+#conBox2{width:100%;height:100%;padding-top:100px;box-sizing:border-box;background-image:url(../../../img/spigen/inv_bg.jpg);background-repeat:no-repeat;                                               background-position:0 0;background-size: cover;}
+ #conBox2 h2{width:100%;font-size:2.5rem;color:#fff;text-align:center;text-transform:uppercase;font-weight:900;}
+  #conBox2 p{font-size:1.125rem;color:#fff;text-align:center;line-height:40px;margin-bottom:80px;}
+  #conBox2 ul{width:84%;min-width:1300px;height:450px;height:23.4375vw;min-height:300px;margin:auto;} /* vw::450/1920*100=23.4375vw */
+    #conBox2 li{float:left;width:32%;height:100%;margin-right:2%;overflow:hidden;background-repeat:no-repeat;background-size:cover;}
+    #conBox2 li:last-child{margin-right:0;}
+      #conBox2 dl{width:100%;height:100%;background-color:rgba(0,0,0,0.8);color:#fff;transform:translateY(82%);transition:all 0.5s ease;}
+        #conBox2 dt{width:100%;height:50px;text-align:center;font-size:1.4rem;color:#fff;text-transform:capitalize;font-weight:bold;padding-top:2vh;transition:all 0.5s ease;} 
+        #conBox2 dd{width:80%;height:auto;margin:auto;text-align:center;font-size:1.125rem;color:#fff;opacity:0;text-transform:uppercase;word-break:keep-all;transition:all 0.5s ease;}
+         /*  #conBox2 a:hover dl,#conBox2 a:focus dl{transform:translateY(0);}
+          #conBox2 a:hover dt,#conBox2 a:focus dt{padding-top:15vh;color:#ff3c00;}
+          #conBox2 a:hover dd,#conBox2 a:focus dd{opacity:1;} */
+      #conBox2 a.action dl{transform:translateY(0);}
+        #conBox2 a.action dt{padding-top:15vh;color:#ff3c00;}
+        #conBox2 a.action dd{opacity:1;}
+        #conBox2 abbr{text-transform:uppercase;}
+  .top_move_btn{display:none;position:fixed;z-index:1000;right:50%;bottom:30px;width:50px;height:50px;margin-right:-45rem;}    
+    .top_move_btn>button{width:100%;height:100%;font-size:2rem;color:#fff;background-color:#fff;color:#ff3c00;}
+    .top_move_btn>button:focus,.top_move_btn>button:hover{background-color:#fff;color:#ff3c00;}
+  
