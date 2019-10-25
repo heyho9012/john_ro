@@ -1,0 +1,24 @@
+// var.scss
+
+// color
+$primary:#f06;
+$sub1:#1d1d1d;
+$black:$sub1;
+$white:#fff;
+$yellow:#fa0;
+$green:#7f7;
+$gray:#aaa;
+$sample:$yellow;
+
+// font
+$line:(1px,3px,10px,30px);
+$border1:nth($line,1) solid $black;
+
+
+// line
+
+//url
+$url:'../img/';
+
+//image
+$myImg:('ad_01.jpg','ad_02.jpg','ad_03.jpg','ad_04.jpg');
