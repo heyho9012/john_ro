@@ -9,6 +9,7 @@
         indiLink=indiLi.find('a'),
         guideBox=viewBox.find('.guide');
   
+  indicator.css({zIndex:500});
   guideBox.css({position:'relative',top:0,left:0});
   indiLink.on('click focus',function(e){
     e.preventDefault();

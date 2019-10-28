@@ -16,7 +16,7 @@
 @include indicator_type_01('.view_indicator',30px);
 
 @include horizontal_slide_banner('.slide_form',4){
-  @include horizon_banner_img(4,$imgName:'ad_',$url:$url,$file:'.jpg');
+  @include horizon_banner_img(4,$imgName:'ad_',$url:'../img/',$file:'.jpg');
   &>h3{@include font($white,4rem,bold);}
     &>p{@include font($white,1.2rem,bold);margin-bottom:1rem;}
     &>.link_btn{width:200px;height:40px;margin-left:5rem;padding:0.2rem;line-height:40px;text-align:center;background-color:$primary;border-radius:40px;

@@ -1,0 +1,38 @@
+// slide_02.scss
+$count:3; //광고배너 개수
+$indiH:16px;
+
+#viewBox_02{position:relative;width:90%;min-width:1200px;height:100%;max-height:800px;min-height:600ox==px;margin:5rem auto 20rem;
+  >.slide_temp{width:100%;height:100%;}
+  .btn_area{position:absolute;z-index:500;bottom:4rem;left:55%;margin-left:2rem;width:300px;height:$indiH;}
+  .slide_02_form{width:100%;height:100%;overflow:hidden;
+    >.guide{width:100%*$count;height:100%;} 
+  }
+}
+.banner_area{float:left;position:relative;z-index:0;width:100%/$count;height:100%;overflow:hidden;
+  @include horizon_banner_img(3,'ad_',$url+'db_main/','.gif');@include bg(0,50%,50%);
+  &:before,&::before{
+    content:"";display:block;position:absolute;z-index:-10;width:70%;height:150%;top:0;left:50%;
+    background-image:linear-gradient(90deg,rgba($blueGreen,1),rgba($blueGreen,0));
+    transition:all 0.4s ease;}
+  &.action:before,&.action::before{transform:rotate(-10deg);}
+}
+// .slide2_{
+// &01{background-color: #fff;}
+// &02{background-color: #fff;}
+// &03{background-color: #fff;}
+// }
+
+#viewBox_02{
+  .indicator{float:left;width:auto;height:100%;margin-right:2rem;
+    >li{float:left;width:auto;height:$indiH;margin-right:1rem;
+      >a{display:block;width:$indiH;height:$indiH;border-radius:$indiH;background-color:$gray;
+        &.action{width:$indiH*3;background-color:$skyblue;}
+        &>span{@include hiddenText;}
+      }
+    }
+  }
+  .view_btn{display:none;float:right;width:auto;height:100%;}
+}
+
+

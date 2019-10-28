@@ -1,0 +1,21 @@
+// _slide_01.scss
+
+.slide_temp{position:relative;top:-90px;width:100%;height:660px;margin:auto;}
+
+.view_btn{position:absolute;left:71%;bottom:110px;width:100%;height:0;
+  &>button{float:left;width:16px;height:16px;margin-right:10px;background-color:$black;transform:lranslateY(-50%);
+    &:hover,&:focus{background-color:$primary;} // .view_btn>button:hover,.view_btn>button:focus
+    & i{color:#fff;font-size:1rem;}
+  } // .view_btn>button
+} // .view_btn
+
+// indicator
+@include indicator_type_02('.view_indicator',14px,67%,96px);
+
+@include horizontal_slide_banner('.slide_form',3,0){
+  @include horizon_banner_img(4,$imgName:'ad_',$url:$url+'db_main/',$file:'.gif');
+    &>.link_btn{width:200px;height:40px;margin-left:5rem;padding:0.2rem;line-height:40px;text-align:center;background-color:$primary;border-radius:40px;
+      &>a{@include link;@include font($white,1.3rem,900);background-color:$primary;border-radius:40px;}
+      &>a:hover,&>a:focus{background-color:transparent;}  
+  }
+}// 가로형 슬라이드 배너

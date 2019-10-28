@@ -6,7 +6,8 @@
 // a요소 사이트 설정, 내부 span요소를 숨기게 만들기
 @mixin link($w:100%,$h:100%){display:block;width:$w;height:$h;&>span{@include hiddenText;}} // @mixin link()
 
-@mixin indicator_type_01($select,$myW){
+
+@mixin indicator_type_01($select,$myW,$zIn:500){
   //하단에 존재하는 indicator형태로, focus처리되면 button이 가로로 늘어나는 형태
   // OPTION: 1. indicator 버튼 하나의 크기 $myW로 설정
   //         2. class선택자의 이름을 설정 $select
@@ -14,7 +15,7 @@
   // interpolation(보간):형태 그대로 대입시키도록 처리하는 것
 
   // indicator
-  #{$select}{$w:$myW;$f:100%;position:absolute;z-index:500;left:50%;bottom:$w;transform:translateX(-50%);width:auto;min-width:135px;height:$w;padding:5px;border-radius:$w;background-color: #fff;
+  #{$select}{$w:$myW;$f:100%;position:absolute;z-index:$zIn;left:50%;bottom:$w;transform:translateX(-50%);width:auto;min-width:135px;height:$w;padding:5px;border-radius:$w;background-color: #fff;
     >ul{width:$f;height:$f;
       >li{float:left;width:auto;height:$w;margin-left:5px;border-radius:$w;
         &:first-child{margin-left:0;} //.view_indicator>ul>li:first-child
@@ -28,7 +29,26 @@
   } // .view_indicator
 
 } // @mixin indicator_type_01
-@mixin horizontal_slide_banner($bannerName,$c,$w:100%,$h:100%,$view:false){
+
+
+@mixin indicator_type_02($select,$myW,$pL,$pB){
+  // indicator
+  #{$select}{$w:$myW;$f:100%;position:absolute;z-index:500;left:$pL;bottom:$pB;transform:translateX(-50%);width:auto;height:$w;border-radius:$w;
+    >ul{width:$f;height:$f;
+      >li{float:left;width:auto;height:$w;margin-left:5px;border-radius:$w;
+        &:first-child{margin-left:0;} //.view_indicator>ul>li:first-child
+      } // .view_indicator>ul>li
+      a{@include link($myW,$f);background-color:$gray;border-radius:$w;transition:all 0.5s ease;
+        &:hover{background-color:lighten($primary,30%);} //.view_indicator>ul>li>a:hover
+        &:focus, &.action{background-color:$skyblue;width:$w*3;} //.view_indicator>ul>li>a:focus
+        &>span{@include hiddenText;}
+      } // .view_indicator>ul>li>a
+    } // .view_indicator>ul
+  } // .view_indicator
+} // @mixin indicator_type_02
+
+
+@mixin horizontal_slide_banner($bannerName,$c,$pd:4rem,$w:100%,$h:100%,$view:false){
   // $bannerName:광고슬라이드 배너를 처리하고 있는 영역의 이름(기본틀)
   // .guide:$bannerName에 자식으로 사용하는 가로슬라이더배너의 내용을 담을 긴 박스의 이름(필수)
   // .guide의 자식요소는 div로 설정되어 있음(필수)
@@ -41,12 +61,13 @@
   #{$bannerName}{$count:$c;width:100%;height:100%;overflow:hidden;
     .guide{width:$w * $count;height:$h;
           @if $view==true{overflow:visible;}@else{overflow:hidden;}
-      &>div{float:left;width:($w / $count);height:$h;background-size:cover;background-repeat:no-repeat;background-position:50% 50%;padding:4rem;box-sizing:border-box;
+      &>div{float:left;width:($w / $count);height:$h;background-size:cover;background-repeat:no-repeat;background-position:50% 50%;padding:$pd;box-sizing:border-box;
         @content;
        }// div(개별요소)
     }
   } // .slide_form
 } // @mixin horizontal_slide_banner
+
 
 @mixin horizon_banner_img($count,$imgName,$url:$url,$file:'.jpg'){
   @for $i from 1 through $count{
@@ -57,7 +78,8 @@
   }//@for 
 } //horizon_banner_img
 
-@mixin font($fc,$fs,$fw){
-  color:$fc;font-size:$fs;font-weight:$fw;
-}
 
+@mixin font($fc,$fs,$fw){color:$fc;font-size:$fs;font-weight:$fw;}
+
+
+@mixin bg($url,$x,$y){background-image:url($url);background-size:cover;background-repeat:no-repeat;background-position:$x $y;}
