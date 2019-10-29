@@ -7,9 +7,11 @@
         indicator=viewBox.find('.view_indicator'),
         indiLi=indicator.find('li'),
         indiLink=indiLi.find('a'),
-        guideBox=viewBox.find('.guide');
+        guideBox=viewBox.find('.guide'),
+        slideEach=guideBox.find('div');
   
   guideBox.css({position:'relative',top:0,left:0});
+  
   indiLink.on('click focus',function(e){
     e.preventDefault();
     // let parLi=$(this).parent('li');
@@ -18,8 +20,6 @@
     indiLink.removeClass('action');
     $(this).addClass('action');
     guideBox.stop().animate({left:-100*i+'%'});
-  })
-
-
-
+  });
+  
 })(jQuery);
