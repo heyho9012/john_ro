@@ -27,20 +27,31 @@
         prevBtn=slide03Btn.children('.prev');
   slideLi=slideGuide.find('li'); // li가 새로 갱신된 내용으로 처리(6개) 
 
-  let myn=0;
+  let myn=0,
+      timed=1000;
   const bannerLen=slideLi.length;
   console.log(bannerLen);
 
   nextBtn.on('click',function(e){
     e.preventDefault();
     myn++;
-    if(myn>=bannerLen-1){myn=0;}
-    slideGuide.stop().animate({left:-100*myn+'%'});
+    if(myn>=bannerLen-1){
+      slideGuide.css({left:'100%'});
+      myn=0;}
+    let per=-100*myn+'%';
+    slideGuide.stop().animate({left:per},timed);
   })
   prevBtn.on('click',function(e){
     e.preventDefault();
     myn--;
-    if(myn<=-1){myn=bannerLen-2;}
-    slideGuide.stop().animate({left:-100*myn+'%'});
+    let per=-100*myn+'%';
+    slideGuide.stop().animate({left:per},timed,function(){
+      if(myn<=-1){myn=bannerLen-2;}
+       per=-100*myn+'%';
+       slideGuide.stop().css({left:per});
+    });
   });
+
+
+
 })(jQuery);
