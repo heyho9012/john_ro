@@ -3,13 +3,19 @@
 
   // 이미지경로,이미지파일명
   const url="../img/sample/";
-  let imgList=[
-    {title:'sample_01',content:'slide content dog 01',linkTest:'naver 바로가기',link:'http://naver.com',bgimg:'sample_01.jpg'},
-    {title:'sample_02',content:'slide content dog 02',linkTest:'daum 바로가기',link:'http://daum.net',bgimg:'sample_02.jpg'},
-    {title:'sample_03',content:'slide content dog 03',linkTest:'unsplash 바로가기',link:'http://unsplash.com',bgimg:'sample_03.jpg'},
-    {title:'sample_04',content:'slide content dog 04',linkTest:'google 바로가기',link:'http://google.com',bgimg:'sample_04.jpg'},
-    {title:'sample_05',content:'slide content dog 05',linkTest:'xidoweb 바로가기',link:'http://xidoweb.com',bgimg:'sample_05.jpg'}
-  ];
+  let imgList;
+  $.ajax({
+    async:false,
+    type:'GET',
+    url:'../data/slide_04.json',
+    dataType:'json',
+    error:function(){console.log('data error');},
+    success:function(data){
+      imgList=data;
+      return imgList;
+    }
+  });
+  console.log(imgList);
   // const imgList=['sample_01.jpg','sample_02.jpg','sample_03.jpg','sample_04.jpg','sample_05.jpg'];
   // 기본선택자 및 내용(기본틀) 생성
   const slide_04=$('#viewBox_04');

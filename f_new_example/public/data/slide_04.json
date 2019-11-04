@@ -1,0 +1,7 @@
+[
+  {"title":"sample_01","content":"slide content dog 01","linkTest":"naver 바로가기","link":"http://naver.com","bgimg":"sample_01.jpg"},
+  {"title":"sample_02","content":"slide content dog 02","linkTest":"daum 바로가기","link":"http://daum.net","bgimg":"sample_02.jpg"},
+  {"title":"sample_03","content":"slide content dog 03","linkTest":"unsplash 바로가기","link":"http://unsplash.com","bgimg":"sample_03.jpg"},
+  {"title":"sample_04","content":"slide content dog 04","linkTest":"google 바로가기","link":"http://google.com","bgimg":"sample_04.jpg"},
+  {"title":"sample_05","content":"slide content dog 05","linkTest":"xidoweb 바로가기","link":"http://xidoweb.com","bgimg":"sample_05.jpg"}
+]

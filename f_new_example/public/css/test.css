@@ -1,0 +1,22 @@
+/* test.css */
+#wrap { width: 100%; height: auto; padding-top: 1rem; }
+
+.accor { width: 600px; height: auto; margin: auto; }
+
+.accor dt { position: relative; width: 100%; height: 50px; background-color: #067; border-bottom: 1px solid #fff; font-size: 1.5rem; line-height: 3.125rem; }
+
+.accor dt a { display: block; width: 100%; height: 100%; color: #fff; text-transform: uppercase; text-indent: 1rem; }
+
+.accor dt a > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+.accor dt a span { position: absolute; z-index: 500; top: 0; right: 0; width: 50px; height: 50px; color: #fff; font-size: 2rem; }
+
+.accor dt a span:before, .accor dt a span::before { content: ""; display: block; position: absolute; top: 50%; transform: translateY(-50%); width: 1px; height: 25px; background-color: #fff; }
+
+.accor dt a span i { display: block; line-height: 50px; transition: all 0.3s ease; }
+
+.accor dt a:focus, .accor dt a:active { background-color: #047; outline: none; }
+
+.accor dt.action i { transform: rotate(180deg); }
+
+.accor dd { display: none; width: 100%; height: auto; background-color: #ace; padding: 0.7rem; box-sizing: border-box; }

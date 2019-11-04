@@ -143,3 +143,20 @@
 #viewBox_04 .slide_form ul li dd.link > a { font-size: 1.3rem; color: #fff; font-weight: bold; }
 
 #viewBox_04 .slide_form ul li dd.link > a:focus, #viewBox_04 .slide_form ul li dd.link > a:hover { background-color: #1d1d1d; color: #fff; }
+
+/* slide_05.css */
+#viewBox_05 { position: relative; width: 100vw; height: 100vh; background-color: #aaa; margin: auto; }
+
+#viewBox_05 .slide_05_btn { position: absolute; z-index: 500; top: 50%; transform: translateY(-50%); right: 30px; width: 100px; height: 80px; }
+
+#viewBox_05 .slide_05_btn button { width: 10px; height: 20px; background-color: #fff; margin-right: 5px; }
+
+#viewBox_05 .slide_05_btn button.prev { right: 30px; }
+
+#viewBox_05 .slide_05_btn button span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#viewBox_05 .slide_05_form { position: relative; z-index: 0; width: 100%; height: 100%; overflow: hidden; }
+
+#viewBox_05 .slide_05_form ul { position: relative; z-index: 0; width: 400vw; height: 100%; margin-left: -100%; }
+
+#viewBox_05 .slide_05_form ul li { float: left; width: 25%; height: 100%; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }

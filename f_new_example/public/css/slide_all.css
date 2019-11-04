@@ -1,0 +1,38 @@
+/* slide_all.css */
+#wrap { width: 100%; height: 100%; margin: auto; background-color: transparent; }
+
+#viewBox { position: relative; width: 100%; height: 90%; margin: auto; background-color: #fcf; }
+
+.view_btn { position: absolute; z-index: 500; width: 90%; height: 0; top: 50%; left: 5%; }
+
+.view_btn button { float: left; width: 50px; height: 50px; margin: auto; background-color: transparent; transform: translateY(-50%); font-size: 50px; font-size: 3.125rem; }
+
+.view_btn button > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+.view_btn .next { float: right; }
+
+.indicator { position: absolute; z-index: 500; left: 50%; bottom: 16px; bottom: 1rem; height: 30px; height: 1.875rem; transform: translateX(-50%); width: auto; padding: 6px; padding: 0.375rem; }
+
+.indicator li { float: left; width: 30px; width: 1.875rem; height: 5px; height: 0.3125rem; margin-left: 16px; margin-left: 1rem; }
+
+.indicator li:first-child { margin-left: 0; }
+
+.indicator li.action { width: 100px; transition: all 0.3s ease; }
+
+.indicator li a { display: block; width: 100%; height: 100%; margin: auto; background-color: #444; border-radius: 30px; border-radius: 1.875rem; }
+
+.slide_form { width: 100%; height: 100%; margin: auto; background-color: #acf; overflow: hidden; }
+
+.slide_wrap { position: relative; width: 500%; height: 100%; margin: auto; background-color: transparent; }
+
+.slide_wrap div { float: left; width: 20%; height: 100%; margin: auto; background-color: transparent; }
+
+.slide_wrap div.slide_01 { background-color: #acc; }
+
+.slide_wrap div.slide_02 { background-color: #fac; }
+
+.slide_wrap div.slide_03 { background-color: #13f; }
+
+.slide_wrap div.slide_04 { background-color: #fa9; }
+
+.slide_wrap div.slide_05 { background-color: #ccc; }

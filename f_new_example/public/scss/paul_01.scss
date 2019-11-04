@@ -1,0 +1,15 @@
+// paul_01.scss
+/* paul_01.css */
+
+@import "./_basic/var";
+@import "./_basic/mixin";
+@import "./_basic/etc";
+
+#wrap{width:100%;height:100%;background-color:$sample;}
+#conBox2{width:100%;height:100%;background-color:darken($yellow,20%);}
+#conBox3{width:100%;height:100%;background-color:darken($yellow,80%);}
+
+@import "./_temp/_paul_headBox";
+@import "./_temp/_paul_viewBox";
+@import "./_temp/_paul_conBox";
+@import "./_temp/_paul_footBox";

@@ -1,0 +1,20 @@
+// mixin_02.scss
+
+@mixin fullBox($w:100%,$h:100%,$bg:transparent){
+  width:$w;height:$h;margin:auto;background-color:$bg;
+}//@mixin fullBox
+
+$rootUnit:16;
+// unit px,rem
+@function unit($u){
+  @return $u/$rootUnit;
+}//@function()
+
+@mixin conUnit($pro,$u){
+  #{$pro}:$u+px;
+  #{$pro}:unit($u)+rem;
+}
+// text hidden
+@mixin hidden{
+  display:block;width:0;height:0;position:absolute;z-index:-1;overflow:hidden;
+} // @mixin hidden

@@ -1,0 +1,32 @@
+// slide_all.scss
+/* slide_all.css */
+@import "./_basic/var";
+@import "./_basic/mixin_02";
+@import "./_basic/etc";
+// 
+#wrap{@include fullBox;}
+// 
+#viewBox{position:relative;@include fullBox($h:90%,$bg:#fcf);}
+  .view_btn{position:absolute;z-index:500;width:90%;height:0;top:50%;left:5%;
+    button{float:left;@include fullBox(50px,50px);transform:translateY(-50%);@include conUnit(font-size,50);
+      &>span{@include hidden;}
+    }
+    .next{float:right;}
+  }
+  .indicator{$myRel:30;position:absolute;z-index:500;left:50%;@include conUnit(bottom,16);@include conUnit(height,$myRel);transform:translateX(-50%);width:auto;@include conUnit(padding,6);
+    li{float:left;@include conUnit(width,$myRel);@include conUnit(height,5);@include conUnit(margin-left,16);
+      &:first-child{margin-left:0;}
+      &.action{width:100px;transition:all 0.3s ease;}
+      a{display:block;@include fullBox($bg:$gray);@include conUnit(border-radius,$myRel);}
+    }
+  }
+  .slide_form{@include fullBox($bg:#acf);overflow:hidden;}
+  .slide_wrap{$count:5;position:relative;@include fullBox(100%*$count);
+    div{float:left;@include fullBox(100%/$count);
+      $c:( #acc,#fac,#13f,#fa9,#ccc);
+      @for $i from 1 through $count{
+        @if $count<10 {&.slide_0#{$i}{background-color:nth($c,$i);}}
+        @else{&.slide_#{$i}{background-color:nth($c,$i);}}
+      }
+    }
+  }
