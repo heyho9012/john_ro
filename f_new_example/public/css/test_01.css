@@ -1,0 +1,32 @@
+/* test_01.css */
+#miniProduct { width: 500px; height: 250px; margin: 200px auto; overflow: hidden; background-image: url("../img/wood/wood.jpg"); background-size: cover; background-repeat: no-repeat; background-position: 0 50%; }
+
+.product { position: relative; left: 0; right: 0; width: 300%; height: 100%; margin: auto; }
+
+.product li { float: left; width: 33.33333%; height: 100%; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+
+.product li:nth-of-type(1) { background-image: url("../img/wood/slide_01.png"); }
+
+.product li:nth-of-type(2) { background-image: url("../img/wood/slide_02.png"); }
+
+.product li:nth-of-type(3) { background-image: url("../img/wood/slide_03.png"); }
+
+.product li a { display: block; width: 100%; height: 100%; }
+
+.product li a > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+.product li a span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+.indicator { position: absolute; z-index: 500; bottom: 200px; left: 50%; transform: translateX(-50%); width: auto; height: 14px; margin-right: 2rem; }
+
+.indicator li { float: left; width: auto; height: 14px; margin-right: 14px; }
+
+.indicator li a { display: block; width: 14px; height: 14px; border-radius: 14px; background-color: #ccc; }
+
+.indicator li a > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+.indicator li a.action { background-color: #1d1d1d; }
+
+.indicator li a:focus { outline: none; }
+
+.indicator li a span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }

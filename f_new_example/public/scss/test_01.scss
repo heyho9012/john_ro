@@ -1,0 +1,27 @@
+// test_01.scss
+/* test_01.css */
+@import "./_basic/var";
+@import "./_basic/mixin";
+@import "./_basic/etc";
+$count : 3;
+
+$indiH:14px;
+#miniProduct{width:500px;height:250px;margin:200px auto;overflow:hidden;
+            @include bg('../img/wood/wood.jpg',cover,0,50%);}
+  .product{position:relative;left:0;right:0;width:100% * $count;height:100%;margin:auto;
+    li{float:left; width:100% / $count; height:100%;background-repeat:no-repeat;background-size:contain;  background-position:50% 50%;
+      @include product_img(3,$imgName:'slide_',$url:$url+'wood/',$file:'.png');
+      a{@include link;
+        span{@include hiddenText;}
+      }
+    }
+  }
+  .indicator{position:absolute;z-index:500;bottom:200px;left:50%;transform:translateX(-50%);width:auto;height:14px;margin-right:2rem;
+    li{float:left;width:auto;height:$indiH;margin-right:$indiH;
+      a{@include link($indiH,$indiH);border-radius:$indiH;background-color:#ccc;
+        &.action{background-color:$black;}
+        &:focus{outline:none;}
+        span{@include hiddenText;}
+      }
+    }
+  } 

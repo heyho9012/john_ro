@@ -2,6 +2,9 @@
 
 // 내부에 있는 text 숨기는 기능 처리하기
 @mixin hiddenText{display:block;width:0;height:0;position:absolute;z-index:-1;overflow:hidden;} // @mixin hiddenText
+@mixin hidden{
+  display:block;width:0;height:0;position:absolute;z-index:-1;overflow:hidden;
+} // @mixin hidden
 
 // a요소 사이트 설정, 내부 span요소를 숨기게 만들기
 @mixin link($w:100%,$h:100%){display:block;width:$w;height:$h;&>span{@include hiddenText;}} // @mixin link()
@@ -47,6 +50,21 @@
   } // .view_indicator
 } // @mixin indicator_type_02
 
+@mixin indicator_type_03($select,$myW,$pL,$pB){
+  // indicator
+  #{$select}{$w:$myW;$f:100%;position:absolute;z-index:500;left:$pL;bottom:$pB;transform:translateX(-50%);width:auto;height:$w;border-radius:$w;
+      >li{float:left;width:auto;height:$w;margin-left:5px;border-radius:$w;
+        &:first-child{margin-left:0;} //.view_indicator>ul>li:first-child
+      } // .view_indicator>ul>li
+      a{@include link($myW,$f);background-color:$gray;border-radius:$w;transition:all 0.5s ease;
+        &:hover{background-color:lighten($primary,30%);} //.view_indicator>ul>li>a:hover
+        &:focus, &.action{background-color:$skyblue;width:$w*3;} //.view_indicator>ul>li>a:focus
+        &>span{@include hiddenText;}
+      } // .view_indicator>ul>li>a
+    } // .view_indicator>ul
+  } // .view_indicator
+// @mixin indicator_type_02
+
 
 @mixin horizontal_slide_banner($bannerName,$c,$pd:4rem,$w:100%,$h:100%,$view:false){
   // $bannerName:광고슬라이드 배너를 처리하고 있는 영역의 이름(기본틀)
@@ -78,9 +96,31 @@
   }//@for 
 } //horizon_banner_img
 
+@mixin product_img($count,$imgName,$url:$url,$file:'.jpg'){
+  @for $i from 1 through $count{
+    $n:null;        
+    @if $i<10{$n:'0'+$i;}@else{$n:$i;} 
+    &:nth-of-type(#{$i}){background-image:url($url+$imgName+$n+$file);}
+    // &:nth-of-type(#{$i}){background-image:url($url+nth($myImg,$i));}
+  }//@for 
+} //horizon_banner_img
+
+@mixin product_img_02($count,$imgName,$url:$url,$file:'.jpg'){
+  @for $i from 1 through $count{
+    $n:null;        
+    @if $i<10{$n:'0'+$i;}@else{$n:$i;} 
+    &.img_0#{$i} a{background-image:url($url+$imgName+$n+$file);}
+    // &:nth-of-type(#{$i}){background-image:url($url+nth($myImg,$i));}
+  }//@for 
+} //horizon_banner_img
+
 
 @mixin font($fc,$fs,$fw){color:$fc;font-size:$fs;font-weight:$fw;}
 
 
-@mixin bg($url,$x,$y){background-image:url($url);background-size:cover;background-repeat:no-repeat;background-position:$x $y;}
+@mixin bg($url,$size,$x,$y){background-image:url($url);background-size:$size;background-repeat:no-repeat;background-position:$x $y;}
+
+@mixin fullBox($w:100%,$h:100%,$bg:transparent){
+  width:$w;height:$h;margin:auto;background-color:$bg;
+}//@mixin fullBox
 

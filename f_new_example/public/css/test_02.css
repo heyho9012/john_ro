@@ -1,0 +1,86 @@
+/* test_02.css */
+#wrap { width: 100%; height: auto; }
+
+#miniProduct_01, #miniProduct_02 { position: relative; width: 450px; height: 300px; margin: auto; margin-bottom: 100px; }
+
+#miniProduct_01 .btn, #miniProduct_02 .btn { position: absolute; bottom: 40px; right: 10px; width: auto; height: 0; background-color: #ccc; }
+
+#miniProduct_01 .btn button, #miniProduct_02 .btn button { float: right; background-color: transparent; color: #444; font-size: 2rem; }
+
+#miniProduct_01 .btn button .next, #miniProduct_02 .btn button .next { float: left; }
+
+#miniProduct_01 .btn button span, #miniProduct_02 .btn button span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct_01 .product, #miniProduct_02 .product { position: relative; width: 100%; height: 250px; overflow: hidden; background-image: url("../img/wood/wood.jpg"); background-size: cover; background-repeat: no-repeat; background-position: 0 0; }
+
+#miniProduct_01 .product ul, #miniProduct_02 .product ul { position: absolute; width: 400%; height: 100%; }
+
+#miniProduct_01 .product ul li, #miniProduct_02 .product ul li { float: left; width: 25%; height: 100%; box-sizing: border-box; padding-top: 10px; }
+
+#miniProduct_01 .product ul li.img_01 a, #miniProduct_02 .product ul li.img_01 a { background-image: url("../img/wood/slide_01.png"); }
+
+#miniProduct_01 .product ul li.img_02 a, #miniProduct_02 .product ul li.img_02 a { background-image: url("../img/wood/slide_02.png"); }
+
+#miniProduct_01 .product ul li.img_03 a, #miniProduct_02 .product ul li.img_03 a { background-image: url("../img/wood/slide_03.png"); }
+
+#miniProduct_01 .product ul a, #miniProduct_02 .product ul a { display: block; width: 430px; height: 230px; margin: auto; background-repeat: no-repeat; background-position: 50% 0; background-size: contain; }
+
+#miniProduct_01 .product ul a > span, #miniProduct_02 .product ul a > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct_01 .product ul a span, #miniProduct_02 .product ul a span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct_03 { position: relative; width: 450px; height: 300px; margin: auto; margin-bottom: 100px; }
+
+#miniProduct_03 .btn { position: absolute; bottom: 40px; right: 10px; width: auto; height: 0; background-color: #ccc; }
+
+#miniProduct_03 .btn button { float: right; background-color: transparent; color: #444; font-size: 2rem; }
+
+#miniProduct_03 .btn button .next { float: left; }
+
+#miniProduct_03 .btn button span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct_03 .product { position: relative; width: 100%; height: 250px; overflow: hidden; background-image: url("../img/wood/wood.jpg"); background-size: cover; background-repeat: no-repeat; background-position: 0 0; }
+
+#miniProduct_03 .product ul { position: absolute; width: 100%; height: 400%; }
+
+#miniProduct_03 .product ul li { float: left; width: 100%; height: 25%; box-sizing: border-box; padding-top: 10px; }
+
+#miniProduct_03 .product ul li.img_01 a { background-image: url("../img/wood/slide_01.png"); }
+
+#miniProduct_03 .product ul li.img_02 a { background-image: url("../img/wood/slide_02.png"); }
+
+#miniProduct_03 .product ul li.img_03 a { background-image: url("../img/wood/slide_03.png"); }
+
+#miniProduct_03 .product ul a { display: block; width: 430px; height: 230px; margin: auto; background-repeat: no-repeat; background-position: 50% 0; background-size: contain; }
+
+#miniProduct_03 .product ul a > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct_03 .product ul a span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct_04 { position: relative; width: 450px; height: 300px; margin: 100px auto; }
+
+#miniProduct_04 .btn { position: absolute; bottom: 40px; right: 10px; width: auto; height: 0; background-color: #ccc; }
+
+#miniProduct_04 .btn button { float: right; background-color: transparent; color: #444; font-size: 2rem; }
+
+#miniProduct_04 .btn button .next { float: left; }
+
+#miniProduct_04 .btn button span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct_04 .product { position: relative; width: 100%; height: 250px; overflow: hidden; background-image: url("../img/wood/wood.jpg"); background-size: cover; background-repeat: no-repeat; background-position: 0 0; }
+
+#miniProduct_04 .product ul { position: absolute; width: 100%; height: 400%; }
+
+#miniProduct_04 .product ul li { position: absolute; width: 100%; height: 25%; box-sizing: border-box; padding-top: 10px; }
+
+#miniProduct_04 .product ul li.img_01 a { background-image: url("../img/wood/slide_01.png"); }
+
+#miniProduct_04 .product ul li.img_02 a { background-image: url("../img/wood/slide_02.png"); }
+
+#miniProduct_04 .product ul li.img_03 a { background-image: url("../img/wood/slide_03.png"); }
+
+#miniProduct_04 .product ul a { display: block; width: 430px; height: 230px; margin: auto; background-repeat: no-repeat; background-position: 50% 0; background-size: contain; }
+
+#miniProduct_04 .product ul a > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct_04 .product ul a span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }

@@ -1,0 +1,63 @@
+// test_02.scss
+/* test_02.css */
+@import "./_basic/var";
+@import "./_basic/mixin";
+@import "./_basic/etc";
+$count:4;
+$url:'../img/wood/';
+#wrap{width:100%;height:auto;}
+  #miniProduct_01,#miniProduct_02{position:relative;width:450px;height:300px;margin:auto;margin-bottom:100px;
+    .btn{position:absolute;bottom:40px;right:10px;width:auto;height:0;background-color: #ccc;
+      button{float:right;background-color:transparent;color:$gray;font-size:2rem;
+        .next{float:left;}
+        span{@include hidden;}
+      }
+    }  
+    .product{position:relative;width:100%;height:250px;overflow:hidden;@include bg($url+'wood.jpg',cover,0,0);
+      ul{position:absolute;width:100%*$count;height:100%;
+        li{float:left;width:100%/$count;height:100%;box-sizing:border-box;padding-top:10px;
+          @include product_img_02(3,'slide_',$url,$file:'.png');}
+           a{@include link(430px,230px);margin:auto;
+             background-repeat:no-repeat;background-position:50% 0;background-size:contain;
+          span{@include hidden;}
+        }
+      }  
+    }
+  }
+
+  #miniProduct_03{position:relative;width:450px;height:300px;margin:auto;margin-bottom:100px;
+    .btn{position:absolute;bottom:40px;right:10px;width:auto;height:0;background-color: #ccc;
+      button{float:right;background-color:transparent;color:$gray;font-size:2rem;
+        .next{float:left;}
+        span{@include hidden;}
+      }
+    }  
+    .product{position:relative;width:100%;height:250px;overflow:hidden;@include bg($url+'wood.jpg',cover,0,0);
+      ul{position:absolute;width:100%;height:100%*$count;
+        li{float:left;width:100%;height:100%/$count;box-sizing:border-box;padding-top:10px;
+          @include product_img_02(3,'slide_',$url,$file:'.png');}
+           a{@include link(430px,230px);margin:auto;
+             background-repeat:no-repeat;background-position:50% 0;background-size:contain;
+          span{@include hidden;}
+        }
+      }  
+    }    
+  }
+  #miniProduct_04{position:relative;width:450px;height:300px;margin:100px auto;
+    .btn{position:absolute;bottom:40px;right:10px;width:auto;height:0;background-color: #ccc;
+      button{float:right;background-color:transparent;color:$gray;font-size:2rem;
+        .next{float:left;}
+        span{@include hidden;}
+      }
+    }  
+    .product{position:relative;width:100%;height:250px;overflow:hidden;@include bg($url+'wood.jpg',cover,0,0);
+      ul{position:absolute;width:100%;height:100%*$count;
+        li{position:absolute;width:100%;height:100%/$count;box-sizing:border-box;padding-top:10px;
+          @include product_img_02(3,'slide_',$url,$file:'.png');}
+           a{@include link(430px,230px);margin:auto;
+             background-repeat:no-repeat;background-position:50% 0;background-size:contain;
+          span{@include hidden;}
+        }
+      }  
+    }    
+  }
