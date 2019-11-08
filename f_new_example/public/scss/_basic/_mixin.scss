@@ -9,6 +9,10 @@
 // a요소 사이트 설정, 내부 span요소를 숨기게 만들기
 @mixin link($w:100%,$h:100%){display:block;width:$w;height:$h;&>span{@include hiddenText;}} // @mixin link()
 
+@mixin image($i,$w:100%,$h:100%,$r:no-repeat,$p:0 0,$s:contain){
+  width:$w;height:$h;background-repeat:$r;background-size:$s;background-position:$p;background-image:url($url+$i);@content
+}
+
 
 @mixin indicator_type_01($select,$myW,$zIn:500){
   //하단에 존재하는 indicator형태로, focus처리되면 button이 가로로 늘어나는 형태

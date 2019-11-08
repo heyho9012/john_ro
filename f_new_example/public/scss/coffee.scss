@@ -1,0 +1,37 @@
+// coffee.scss
+/* coffee.css */
+@import "./_basic/var";
+@import "./_basic/mixin";
+@import "./_basic/etc";
+// =============================================
+#wrap{width:100%;height:auto;padding-top:300px;}
+
+#miniProduct{position:relative;width:400px;height:auto;margin:auto;
+  .btn{position:absolute;top:50%;z-index:500;width:100%;height:0;
+    button{background-color:transparent;color:$black;font-size:6.25rem;transform:translateY(-50%);
+      &:hover{opacity:0.8;}
+    }
+    .next{float:right;}
+    span{@include hidden;}
+  } //button============================================================
+
+  .indicator{position:absolute;bottom:-40px;left:0;right:0;margin:auto;width:362px;height:26px;border-radius:100%;
+    li{float:left;width:26px;height:26px;margin-right:16px;background-color:$gray;border-radius:100%;
+      &:last-child{margin-right:0;}
+      a{@include link;
+        span{@include hidden;}
+      }
+    }
+  } //indicator============================================================
+
+  $count:10;$url:'../img/coffee/';$iN:'menu_';
+  .product_wrap{position:relative;width:100%;height:300px;overflow:hidden;
+    .product{position:absolute;width:100%*$count;height:100%;
+      li{float:left;width:100%/$count;height:100%;@include product_img_02($count,$iN,$url,'.png');
+        a{@include link;background-repeat:no-repeat;background-size:contain;background-position:50% 50%;
+          span{@include hidden;}
+        }
+      }
+    }
+  } //img============================================================
+}

@@ -1,13 +1,13 @@
 /* slide_all.css */
-#wrap { width: 100%; height: 100%; margin: auto; background-color: transparent; }
+#wrap { width: 100%; height: 100%; margin: auto; background-color: #fa0; }
 
 #viewBox { position: relative; width: 100%; height: 90%; margin: auto; background-color: #fcf; }
 
 .view_btn { position: absolute; z-index: 500; width: 90%; height: 0; top: 50%; left: 5%; }
 
-.view_btn button { float: left; width: 50px; height: 50px; margin: auto; background-color: transparent; transform: translateY(-50%); font-size: 50px; font-size: 3.125rem; }
+.view_btn button { float: left; width: 50px; height: 50px; margin: auto; background-color: #fa0; transform: translateY(-50%); font-size: 50px; font-size: 3.125rem; }
 
-.view_btn button > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+.view_btn button > span { display: block; width: 0; height: 0; overflow: hidden; }
 
 .view_btn .next { float: right; }
 
@@ -23,9 +23,9 @@
 
 .slide_form { width: 100%; height: 100%; margin: auto; background-color: #acf; overflow: hidden; }
 
-.slide_wrap { position: relative; width: 500%; height: 100%; margin: auto; background-color: transparent; }
+.slide_wrap { position: relative; width: 500%; height: 100%; margin: auto; background-color: #fa0; }
 
-.slide_wrap div { float: left; width: 20%; height: 100%; margin: auto; background-color: transparent; }
+.slide_wrap div { float: left; width: 20%; height: 100%; margin: auto; background-color: #fa0; }
 
 .slide_wrap div.slide_01 { background-color: #acc; }
 

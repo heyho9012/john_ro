@@ -1,0 +1,73 @@
+<!--slide_indi_and_btn.html-->
+<!DOCTYPE html>
+<html lang="ko-KR">
+ <head>
+<noscript>
+<p>현재 접속하고 있는 사이트의 기능의 일부가 원활하게 실행되고 있지 않습니다.<br />자바스크립트의 기능을 활성화 해주세요</p>
+<p><a target="_blank" href="http://enable-javascript.com/ko"></a>자바스크립트 활성화 처리하기</p>
+</noscript>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="../font/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/slide_indi_and_btn.css">
+
+  <!--[if lte IE 9]>
+   <script src="./ie/html5shiv-3.7.3/dist/html5shiv.min.js"> </script>
+   <script src="../ie/PIE-1.0.0/PIE.js"></script>
+   <script src="../ie/Respond-1.4.2/dest/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="shortcut icon" type="image/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+  <title>slide_indi_and_btn</title>
+ </head>
+
+  <body>
+    <div id="wrap">
+      <h1>slide_indi_and_btn</h1>
+      <div id="slide_01">
+      </div>
+      <div id="slide_02">
+      </div>
+
+    </div>
+
+ <script src="../js/base/jquery-3.4.1.min.js"></script>
+ <script src="../js/base/jquery-ui.min.js"></script>
+ <script src="../js/src/slide_indi_and_btn.js"></script>
+ <script>
+   (function(){
+     let data='../data/';
+     let img='../img/coffee/';
+     $('#slide_01').myIndiSlide(data,img);
+     $('#slide_02').myIndiSlide(data,img);
+   })(jQuery);
+ </script>
+ <script>
+   let ww=$(window).outerWidth();
+  //  브라우저 크기에 따른 기능
+   const viewBrowser=function(ww){
+     if(ww<=480){
+
+     }else if(ww>480&&ww<=1280){
+
+     }else if(ww>1280&&ww<=1600){
+
+     }else{
+
+     }
+   };viewBrowser(ww);
+  // 사이즈 변경 시 새로고침
+   $(window).on('resize',function(){
+    let nw=$(window).outerWidth();
+    if(ww!==nw){location.reload();}
+   });
+ </script>
+ </body>
+</html>

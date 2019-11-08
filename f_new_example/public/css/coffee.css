@@ -1,0 +1,58 @@
+/* coffee.css */
+#wrap { width: 100%; height: auto; padding-top: 300px; }
+
+#miniProduct { position: relative; width: 400px; height: auto; margin: auto; }
+
+#miniProduct .btn { position: absolute; top: 50%; z-index: 500; width: 100%; height: 0; }
+
+#miniProduct .btn button { background-color: transparent; color: #1d1d1d; font-size: 6.25rem; transform: translateY(-50%); }
+
+#miniProduct .btn button:hover { opacity: 0.8; }
+
+#miniProduct .btn .next { float: right; }
+
+#miniProduct .btn span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct .indicator { position: absolute; bottom: -40px; left: 0; right: 0; margin: auto; width: 362px; height: 26px; border-radius: 100%; }
+
+#miniProduct .indicator li { float: left; width: 26px; height: 26px; margin-right: 16px; background-color: #444; border-radius: 100%; }
+
+#miniProduct .indicator li:last-child { margin-right: 0; }
+
+#miniProduct .indicator li a { display: block; width: 100%; height: 100%; }
+
+#miniProduct .indicator li a > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct .indicator li a span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct .product_wrap { position: relative; width: 100%; height: 300px; overflow: hidden; }
+
+#miniProduct .product_wrap .product { position: absolute; width: 1000%; height: 100%; }
+
+#miniProduct .product_wrap .product li { float: left; width: 10%; height: 100%; }
+
+#miniProduct .product_wrap .product li.img_01 a { background-image: url("../img/coffee/menu_01.png"); }
+
+#miniProduct .product_wrap .product li.img_02 a { background-image: url("../img/coffee/menu_02.png"); }
+
+#miniProduct .product_wrap .product li.img_03 a { background-image: url("../img/coffee/menu_03.png"); }
+
+#miniProduct .product_wrap .product li.img_04 a { background-image: url("../img/coffee/menu_04.png"); }
+
+#miniProduct .product_wrap .product li.img_05 a { background-image: url("../img/coffee/menu_05.png"); }
+
+#miniProduct .product_wrap .product li.img_06 a { background-image: url("../img/coffee/menu_06.png"); }
+
+#miniProduct .product_wrap .product li.img_07 a { background-image: url("../img/coffee/menu_07.png"); }
+
+#miniProduct .product_wrap .product li.img_08 a { background-image: url("../img/coffee/menu_08.png"); }
+
+#miniProduct .product_wrap .product li.img_09 a { background-image: url("../img/coffee/menu_09.png"); }
+
+#miniProduct .product_wrap .product li.img_010 a { background-image: url("../img/coffee/menu_10.png"); }
+
+#miniProduct .product_wrap .product li a { display: block; width: 100%; height: 100%; background-repeat: no-repeat; background-size: contain; background-position: 50% 50%; }
+
+#miniProduct .product_wrap .product li a > span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
+
+#miniProduct .product_wrap .product li a span { display: block; width: 0; height: 0; position: absolute; z-index: -1; overflow: hidden; }
