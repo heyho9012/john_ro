@@ -1,0 +1,24 @@
+// jq_mousewheel.scss
+/* // jq_mousewheel.css */
+@mixin box($w:100%,$h:100%,$c:#fff){width:$w;height:$h;background-color:$c;}
+@mixin hidden{display: block; width: 0; height: 0; overflow: hidden;}
+@mixin link($w:100%,$h:100%){display:block;width:$w;height:$h;&>span{@include hidden;}}
+
+#wrap{width:100%;height:100%;}
+#headBox{position:fixed;z-index:1000;top:0;left:0;right:0;margin:auto;@include box(80%,100px,#ccc);padding:1rem;box-sizing:border-box;border-radius:0 0 0.5rem 0.5rem;
+  h1{float:left;width:100px;height:100px;overflow:hidden;}
+  #gnb{float:right;width:60%;height:auto;
+    h2{@include hidden;}
+    ul{width:100%;height:auto;
+      li{float:left;@include box(100px,50px);margin-right:10px;
+        a{@include link;}
+      }
+    }
+  }
+}
+
+#viewBox{@include box($c:#acf);}
+#conBox_01{@include box($c:#fca);}
+#conBox_02{@include box($c:#aff);}
+#conBox_03{@include box($c:#ffa);}
+#footBox{@include box($h:300px,$c:#777);}
