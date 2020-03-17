@@ -92,7 +92,7 @@
     "mime-db": "^1.40.0",
     "mime-types": "^2.1.24",
     "minimatch": "^3.0.4",
-    "minimist": "^0.0.8",
+    "minimist": "^1.2.5",
     "mkdirp": "^0.5.1",
     "nan": "^2.14.0",
     "node-gyp": "^3.8.0",
